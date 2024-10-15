@@ -15,26 +15,15 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 50px 175px 65px 442px 300px 329px 51px 372px;
-
-    grid-template-rows: 50px 175px 65px 442px 329px 51px 372px;
-    /* Adjust row heights */
-    grid-template-columns: 160px 500px 323px;
-    /* Adjusted column widths based on layout */
+    grid-template-rows: 50px 175px 65px 374px 66px 327px;
+    grid-template-columns: 160px 715px 327px;
     grid-template-areas:
-        "one one seven"
+        "one seven seven"
         "two two two"
         "three three three"
         "four four eight"
         "four four five"
-        "six six six"
-        "six six six";
-    /* Ensures full width in the last row */
-    max-width: 983px;
-    /* Total width based on column sizes */
-
-
-
+        "six six five"
 }
 
 .box1 {
