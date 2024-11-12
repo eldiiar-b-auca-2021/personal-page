@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://cdn.imgchest.com/files/6yxkcg98k7w.png);
+    background-repeat: no-repeat;
+    max-width: 1202px;
+    min-height: 1583px;
+    font-size: 2rem;
+    color: blue;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: minmax(50px, auto) minmax(175px, auto) minmax(65px, auto) minmax(374px, auto) minmax(66px, auto) minmax(327px, auto);
+    grid-template-columns: minmax(50px, 160px) minmax(50px, 820px) minmax(50px, 327px);
+    grid-template-areas:
+        "one seven seven"
+        "two two two"
+        "three three three"
+        "four four eight"
+        "four four five"
+        "six six five";
+}
+
+
+.box1 {
+    grid-area: one;
+}
+
+.box2 {
+    grid-area: two;
+}
+
+.box3 {
+    grid-area: three;
+}
+
+.box4 {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+}
+
+.box6 {
+    grid-area: six;
+}
+
+.box7 {
+    grid-area: seven;
+}
+
+.box8 {
+    grid-area: eight;
+}
+
+/* .container>* {
+    border: 2px dashed blue;
+} */
+
+.box7 ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    gap: 20px;
+    padding: 10px 20px;
+    margin: 0;
+    justify-content: start;
+    background-color: #e0e0e0;
+    line-height: 2;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+.box7 ul li {
+    color: #1d1d1d;
+}
