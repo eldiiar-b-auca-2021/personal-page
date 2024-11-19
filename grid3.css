@@ -96,12 +96,12 @@ body {
         grid-template-columns: 100%;
         grid-template-areas:
             "one"
+            "seven"
             "two"
             "three"
             "four"
             "five"
             "six"
-            "seven"
             "eight"
     }
 }
