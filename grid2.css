@@ -60,9 +60,9 @@ body {
     grid-area: eight;
 }
 
-/* .container>* {
+.container>* {
     border: 2px dashed blue;
-} */
+}
 
 .box7 ul {
     display: flex;
@@ -83,4 +83,19 @@ body {
 
 .box7 ul li {
     color: #1d1d1d;
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+            "seven"
+            "eight"
+    }
 }

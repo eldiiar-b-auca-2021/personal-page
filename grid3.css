@@ -13,7 +13,7 @@ body {
 }
 
 body {
-    background-image: url(https://cdn.imgchest.com/files/6yxkcg98k7w.png);
+    /* background-image: url(https://cdn.imgchest.com/files/6yxkcg98k7w.png); */
     background-repeat: no-repeat;
     max-width: 1202px;
     min-height: 1583px;
@@ -28,9 +28,9 @@ body {
     grid-template-rows: minmax(50px, auto) minmax(175px, auto) minmax(65px, auto) minmax(374px, auto) minmax(66px, auto) minmax(327px, auto);
     grid-template-columns: minmax(50px, 160px) minmax(50px, 820px) minmax(50px, 327px);
     grid-template-areas:
-        "one seven seven"
-        "two two two"
-        "three three three"
+        "one one one"
+        "seven two two"
+        "seven three three"
         "four four eight"
         "four four five"
         "six six five";
@@ -69,9 +69,9 @@ body {
     grid-area: eight;
 }
 
-/* .container>* {
+.container>* {
     border: 2px dashed blue;
-} */
+}
 
 .box7 ul {
     display: flex;
@@ -89,4 +89,19 @@ body {
     color: #1d1d1d;
     text-transform: uppercase;
     border-bottom: 1px solid #1d1d1d;
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+            "seven"
+            "eight"
+    }
 }
