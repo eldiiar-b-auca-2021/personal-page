@@ -27,9 +27,24 @@ body {
         "six six five";
 }
 
+.logo {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo .blue {
+    color: blue;
+}
+
+.logo .red {
+    color: red;
+}
 
 .box1 {
     grid-area: one;
+    padding: 10px;
 }
 
 .box2 {
