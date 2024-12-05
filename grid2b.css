@@ -31,10 +31,11 @@ body {
 
 .box1 {
     grid-area: one;
-    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .box2 {
@@ -59,6 +60,9 @@ body {
 
 .box7 {
     grid-area: seven;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
 .box8 {
@@ -75,9 +79,8 @@ body {
     flex-wrap: wrap;
     font-size: 14px;
     gap: 10px;
-    padding: 10px 20px;
     margin: 0;
-    justify-content: start;
+    padding-left: 5px;
     background-color: #e0e0e0;
     line-height: 2;
 
