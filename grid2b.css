@@ -15,6 +15,7 @@ body {
     opacity: 0.5;
 }
 
+/* Container Grid Layout */
 .container {
     display: grid;
     grid-template-rows: minmax(50px, auto) minmax(175px, auto) minmax(65px, auto) minmax(374px, auto) minmax(66px, auto) minmax(327px, auto);
@@ -28,15 +29,16 @@ body {
         "six six five";
 }
 
+.container>* {
+    border: 2px dashed blue;
+}
 
-
+/* Boxes */
 .box1 {
     grid-area: one;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
 }
 
 .box2 {
@@ -45,6 +47,11 @@ body {
 
 .box3 {
     grid-area: three;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .box4 {
@@ -63,17 +70,121 @@ body {
     grid-area: seven;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .box8 {
     grid-area: eight;
 }
 
-.container>* {
-    border: 2px dashed blue;
+/* Top Navigation (box3) */
+.box3 nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    font-size: 12px;
+    margin: 0;
+    padding-left: 25px;
+    padding-bottom: 7px;
+    line-height: 1.7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
+.li2,
+.li3,
+.li4,
+.li5 {
+    padding-left: 10px;
+}
+
+.li4 {
+    padding-left: 11px;
+}
+
+.li5 {
+    padding-left: 12px;
+}
+
+.li7 {
+    padding-left: 2px;
+}
+
+/* Kyrgyz label in box3 */
+.box3 .kyrgyz {
+    font-size: 12px;
+    padding-bottom: 5px;
+    margin-right: 50px;
+    padding-right: 34px;
+    color: red;
+}
+
+/* Social and language section in box3 */
+.box3 .social-and-language {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 27px;
+    display: flex;
+    align-items: center;
+}
+
+/* Input field styling */
+.social-and-language input {
+    width: 110px;
+    height: 28px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 17px;
+}
+
+.social-and-language span {
+
+    margin-bottom: 5px;
+
+    padding-right: 4px;
+}
+
+/* "We are in social networks:" label */
+.social-and-language .social {
+    font-size: 13px;
+    margin-right: 2px;
+}
+
+/* Icon styling  */
+
+/* Adjusting specific icon sizes as previously done inline */
+.social-and-language i.fa.fa-twitter {
+    font-size: 20px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+.social-and-language i.fa.fa-facebook {
+    font-size: 20px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.social-and-language i.fa.fa-youtube {
+    font-size: 22px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.social-and-language i.fa.fa-instagram {
+    font-size: 24px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.social-and-language i.fa.fa-telegram {
+    font-size: 20px;
+    margin-right: 0;
+    margin-bottom: 7px;
+}
+
+/* Box7 ul (bottom navigation) */
 .box7 ul {
     display: flex;
     list-style: none;
@@ -82,12 +193,9 @@ body {
     gap: 10px;
     margin: 0;
     padding-left: 10px;
-    /* background-color: #e0e0e0; */
     line-height: 2;
-
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-
 }
 
 .list2 {
@@ -126,6 +234,20 @@ body {
     color: #1d1d1d;
 }
 
+.box3 ul {
+    background: repeating-linear-gradient(140deg,
+            #ccc,
+            #ccc 1px,
+            #fff 1px,
+            #fff 3px);
+}
+
+.box3 {
+    color: #1d1d1d;
+}
+
+
+/* Additional media query for responsiveness */
 @media (max-width: 500px) {
     .container {
         grid-template-columns: 100%;
@@ -137,6 +259,6 @@ body {
             "four"
             "five"
             "six"
-            "eight"
+            "eight";
     }
 }
