@@ -68,9 +68,6 @@ body>img {
     font-weight: bold;
 }
 
-.box6 {
-    grid-area: six;
-}
 
 .box7 {
     grid-area: seven;
@@ -303,8 +300,141 @@ body>img {
     color: #1d1d1d;
 }
 
+.box6 section {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
 
-/* Additional media query for responsiveness */
+.box6 {
+    grid-area: six;
+}
+
+
+.box6 .article-1 {
+    line-height: 2.1;
+    font-size: 8px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: #fff;
+    padding-left: 25px;
+}
+
+.box6 .article-1 .img-1 {
+    width: 100px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.box6 .article-1 div {
+    flex: 1;
+}
+
+.box6 .article-1 .h1-1 {
+    font-size: 14px;
+    margin-top: 17px;
+    padding-left: 3px;
+}
+
+.box6 .article-1 .p-1 {
+    padding-left: 3px;
+    font-size: 11.5px;
+}
+
+.box6 .article-1 .datetime-1 {
+    font-size: 12px;
+    padding-left: 5px;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* divide */
+.box6 .article-2 {
+    line-height: 2.1;
+    font-size: 8px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: #fff;
+    padding-left: 25px;
+
+}
+
+.box6 .article-2 .img-2 {
+    width: 100px;
+    height: auto;
+    flex-shrink: 0;
+    padding-top: 4px;
+}
+
+.box6 .article-2 div {
+    flex: 1;
+}
+
+.box6 .article-2 .h2-2 {
+    font-size: 14px;
+    margin-top: 13px;
+    padding-left: 3px;
+
+}
+
+.box6 .article-2 .p-2 {
+    padding-left: 3px;
+    font-size: 11.5px;
+}
+
+.box6 .article-2 .datetime-2 {
+    font-size: 12px;
+    padding-left: 5px;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* divide */
+.box6 .article-3 {
+    line-height: 2.2;
+    font-size: 8px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: #fff;
+    padding-left: 25px;
+}
+
+.box6 .article-3 .img-3 {
+    width: 100px;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: -10px;
+}
+
+.box6 .article-3 div {
+    flex: 1;
+}
+
+.box6 .article-3 .h2-3 {
+    font-size: 13.8px;
+    margin-top: 30px;
+    padding-left: 4.7px;
+    /* line-height: 1.9; */
+}
+
+.box6 .article-3 .p-3 {
+    padding-left: 4px;
+    font-size: 11.5px;
+    line-height: 1.9;
+}
+
+.box6 .article-3 .datetime-3 {
+    font-size: 12px;
+    padding-left: 5px;
+    margin-top: 10px;
+    color: #666;
+}
+
 @media (max-width: 500px) {
     .container {
         grid-template-columns: 100%;
