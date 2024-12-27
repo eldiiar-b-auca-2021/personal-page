@@ -1,53 +1,632 @@
 * {
     margin: 0;
-}
-
-#header h1 {
-    font-size: 1.5rem;
-    color: white;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial;
+    background-image: url(https://cdn.imgchest.com/files/6yxkcg98k7w.png);
+    background-repeat: no-repeat;
+    max-width: 1202px;
+    min-height: 1583px;
+    font-size: 2rem;
+    color: blue;
+    margin: 0;
+    padding: 0;
 }
 
-#title {
-    height: 35rem;
-    background-color: lightgray;
-    text-align: center;
+body>img {
+    opacity: 0.5;
 }
 
-#header {
-    background-color: dimgray;
-    border-bottom: .5rem solid lightseagreen;
-    height: 5.5rem;
+/* Container Grid Layout */
+.container {
+    display: grid;
+    grid-template-rows: minmax(50px, auto) minmax(175px, auto) minmax(65px, auto) minmax(369px, auto) minmax(65px, auto) minmax(327px, auto);
+    grid-template-columns: minmax(50px, 160px) minmax(50px, 820px) minmax(50px, 327px);
+    grid-template-areas:
+        "one seven seven"
+        "two two two"
+        "three three three"
+        "four four eight"
+        "four four five"
+        "six six five";
 }
 
-#about {
+.container>* {
+    border: 2px dashed blue;
+}
+
+/* Boxes */
+.box1 {
+    grid-area: one;
     display: flex;
-
-}
-
-h3 {
-    padding-top: 2.5rem;
-    color: LightSalmon;
-    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-#fav {
+.box2 {
+    grid-area: two;
+}
+
+.box3 {
+    grid-area: three;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.box4 {
+    grid-area: four;
+    opacity: 0.4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.news-list {
+    list-style: none;
+    margin: 0;
+    font-weight: bold;
+    padding-left: 12px;
+    font-size: 13.8px;
+    color: #333;
+}
+
+.news-list li {
+    border-bottom: 1px solid #ddd;
+}
+
+.l1 {
+    margin-top: 22px;
+    padding-bottom: 12px;
+}
+
+.l2 {
+    margin-top: 15px;
+    padding-bottom: 12px;
+}
+
+.l3 {
+    margin-top: 15px;
+    padding-bottom: 12px;
+}
+
+.l4 {
+    margin-top: 15px;
+    padding-bottom: 11px;
+}
+
+.l5 {
+    margin-top: 15px;
+    padding-bottom: 12px;
+}
+
+.news-list li:last-child {
+    border-bottom: none;
+}
+
+
+.heading {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    display: flex;
+
+}
+
+
+.box5 {
+    grid-area: five;
+    opacity: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.box7 {
+    grid-area: seven;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.box8 {
+    grid-area: eight;
+    opacity: 0.4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.box8 {
+    grid-area: eight;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: #fff;
+}
+
+.interview-header {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+
+.interview-content {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.interview-content h2 {
+    font-size: 19px;
+    line-height: 1.1;
+    padding-top: 8px;
+    margin-bottom: 10px;
+
+}
+
+.custom-radio-option {
+    position: relative;
+    /* so we can place the circle absolutely inside */
+    padding-left: 30px;
+    /* space for the custom circle */
+    margin-bottom: 14px;
+    /* spacing between radio options */
+    cursor: pointer;
+    /* entire line is clickable */
+    font-size: 14px;
+    /* adjust to match your design */
+    line-height: 1.2;
+    /* or exact px if you want pixel-perfect alignment */
+}
+
+/* Hide the real radio visually, but keep it accessible to screen readers */
+.custom-radio-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* The custom outer circle */
+.custom-radio-option::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* adjust top offset if you need to nudge vertically */
+    width: 18px;
+    /* outer circle diameter */
+    height: 18px;
+    border: 2px solid #333;
+    /* outer circle color */
+    border-radius: 50%;
+    background-color: #fff;
+    /* inside color, or transparent if you prefer */
+}
+
+/* The custom “checked” fill circle */
+.custom-radio-option::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 5px;
+    /* position inside the outer circle */
+    top: 5px;
+    width: 8px;
+    /* the filled dot’s diameter */
+    height: 8px;
+    border-radius: 50%;
+    background-color: #007bff;
+    /* the “checked” color */
+    opacity: 0;
+    /* hidden by default */
+    transition: opacity 0.2s;
+    /* fade in/out */
+}
+
+/* Show the filled circle when checked */
+.custom-radio-option input[type="radio"]:checked~label::after {
+    opacity: 1;
 }
 
 
 
-#about img {
-    height: 22rem;
+
+.interview-buttons .btn-watch,
+.interview-buttons .btn-vote {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 2px;
+    /* optional slight rounding */
+}
+
+.interview-buttons .btn-watch:hover,
+.interview-buttons .btn-vote:hover {
+    background-color: #0056b3;
+    /* darker blue on hover */
 }
 
 
-#about h3 {
-    width: 10rem;
-    margin: 0 auto;
+/* Top Navigation (box3) */
+.box3 nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    font-size: 12px;
+    margin: 0;
+    padding-left: 25px;
+    padding-bottom: 7px;
+    line-height: 1.7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.li2,
+.li3,
+.li4,
+.li5 {
+    padding-left: 10px;
+}
+
+.li4 {
+    padding-left: 11px;
+}
+
+.li5 {
+    padding-left: 12px;
+}
+
+.li7 {
+    padding-left: 2px;
+}
+
+/* Kyrgyz label in box3 */
+.box3 .kyrgyz {
+    font-size: 12px;
+    padding-bottom: 5px;
+    margin-right: 50px;
+    padding-right: 34px;
+    color: red;
+}
+
+/* Social and language section in box3 */
+.box3 .social-and-language {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 27px;
+    display: flex;
+    align-items: center;
+}
+
+/* Input field styling */
+.social-and-language input {
+    width: 110px;
+    height: 28px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 17px;
+}
+
+.social-and-language span {
+
+    margin-bottom: 5px;
+
+    padding-right: 4px;
+}
+
+/* "We are in social networks:" label */
+.social-and-language .social {
+    font-size: 13px;
+    margin-right: 2px;
+}
+
+/* Icon styling  */
+
+/* Adjusting specific icon sizes as previously done inline */
+.social-and-language i.fa.fa-twitter {
+    font-size: 20px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+.social-and-language i.fa.fa-facebook {
+    font-size: 20px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.social-and-language i.fa.fa-youtube {
+    font-size: 22px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.social-and-language i.fa.fa-instagram {
+    font-size: 24px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.social-and-language i.fa.fa-telegram {
+    font-size: 20px;
+    margin-right: 0;
+    margin-bottom: 7px;
+}
+
+
+
+.video-header {
+    background-color: blue;
+    /* Blue background */
+    color: #fff;
+    /* White text */
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 11px;
+
+}
+
+.video-footer {
+    background-color: gray;
+    height: 80px;
+    /* Blue background */
+    color: #fff;
+}
+
+.video-content {
+    padding: 18px 20px;
+}
+
+.video-content .video-content-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-title {
+    margin-top: 15px;
+    padding-bottom: 13px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    color: blue;
+}
+
+.video-views {
+    font-size: 12px;
+    color: #555;
+    margin-top: 0px;
+}
+
+
+/* Box7 ul (bottom navigation) */
+.box7 ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    font-size: 13px;
+    gap: 10px;
+    margin: 0;
+    padding-left: 10px;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.list2 {
+    padding-left: 5px;
+}
+
+.list3 {
+    padding-left: 5px;
+}
+
+.list4 {
+    padding-left: 5px;
+}
+
+.list5 {
+    padding-left: 5px;
+}
+
+.list6 {
+    padding-left: 5px;
+}
+
+.list7 {
+    padding-left: 5px;
+}
+
+.list8 {
+    padding-left: 5px;
+}
+
+.list9 {
+    padding-left: 5px;
+}
+
+.box7 ul li {
+    color: #1d1d1d;
+}
+
+.box3 ul {
+    background: repeating-linear-gradient(140deg,
+            #ccc,
+            #ccc 1px,
+            #fff 1px,
+            #fff 3px);
+}
+
+.box3 {
+    color: #1d1d1d;
+}
+
+.box6 section {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.box6 {
+    grid-area: six;
+}
+
+
+.box6 .article-1 {
+    line-height: 2.1;
+    font-size: 8px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: #fff;
+    padding-left: 25px;
+}
+
+.box6 .article-1 .img-1 {
+    width: 100px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.box6 .article-1 div {
+    flex: 1;
+}
+
+.box6 .article-1 .h1-1 {
+    font-size: 14px;
+    margin-top: 17px;
+    padding-left: 3px;
+}
+
+.box6 .article-1 .p-1 {
+    padding-left: 3px;
+    font-size: 11.5px;
+}
+
+.box6 .article-1 .datetime-1 {
+    font-size: 12px;
+    padding-left: 5px;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* divide */
+.box6 .article-2 {
+    line-height: 2.1;
+    font-size: 8px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: #fff;
+    padding-left: 25px;
+
+}
+
+.box6 .article-2 .img-2 {
+    width: 100px;
+    height: auto;
+    flex-shrink: 0;
+    padding-top: 4px;
+}
+
+.box6 .article-2 div {
+    flex: 1;
+}
+
+.box6 .article-2 .h2-2 {
+    font-size: 14px;
+    margin-top: 13px;
+    padding-left: 3px;
+
+}
+
+.box6 .article-2 .p-2 {
+    padding-left: 3px;
+    font-size: 11.5px;
+}
+
+.box6 .article-2 .datetime-2 {
+    font-size: 12px;
+    padding-left: 5px;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* divide */
+.box6 .article-3 {
+    line-height: 2.2;
+    font-size: 8px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: #fff;
+    padding-left: 25px;
+}
+
+.box6 .article-3 .img-3 {
+    width: 100px;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: -10px;
+}
+
+.box6 .article-3 div {
+    flex: 1;
+}
+
+.box6 .article-3 .h2-3 {
+    font-size: 13.8px;
+    margin-top: 30px;
+    padding-left: 4.7px;
+    /* line-height: 1.9; */
+}
+
+.box6 .article-3 .p-3 {
+    padding-left: 4px;
+    font-size: 11.5px;
+    line-height: 1.9;
+}
+
+.box6 .article-3 .datetime-3 {
+    font-size: 12px;
+    padding-left: 5px;
+    margin-top: 10px;
+    color: #666;
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "one"
+            "seven"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+            "eight";
+    }
 }

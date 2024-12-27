@@ -3,76 +3,184 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Page</title>
+    <title>Assignment 10</title>
+    <link rel="stylesheet" href="style.css" class="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<script>
+    function switchStyle() {
+        let style = document.querySelector('.style');
+        if (style.getAttribute('href') == 'grid4.css') {
+            style.setAttribute('href', 'grid2b.css');
+        } else {
+            style.setAttribute('href', 'grid4.css');
+        }
+    }
+</script>
 
 <body>
+    <img src='https://cdn.imgchest.com/files/j7mmcrer276.png' style='position: absolute; top:0; left:0;z-index:-1'>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
 
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <div id="header">
-        <h1>NAME Lorem Ipsum</h1>
-    </div>
-
-    <div id="title">
-        <h2>Lorem Ipsum Dolor Sit Amet</h2>
-        <p>"QUOTE Lorem ipsum dolor sit"</p>
-    </div>
-
-    <div id="about">
-        <img
-            src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp">
-        <div>
-            <h3>ABOUT</h3>
-            <p>I’m characterized as cool, cute, loyal, sweet, friendly, mysterious, unique, determined, yet sensitive,
-                boyish and impetuous.
-
-                I was born intellectually challenged, which makes me: somewhat socially awkward, misunderstood,
-                unpredictable and a little multidimensional. But I’m really smart, knowledgeable, independent,
-                compassionate and driven. Not to mention I can also be quite observant.
-
-                At times, I can be a little serious, moody, irritable, lazy, rude, selfish, arrogant, stubborn, jealous,
-                narcissistic, clueless, forgetful, sneaky, aggressive, impulsive, immature, cynical, mischievous,
-                intimidating, obsessive and a bit downtrodden. I can also sometimes be a bit of a perfectionist as well
-                as being an imitator and follower. I even occasionally wear all my emotions on my sleeve. There are also
-                times when I can be a little gullible, trusting, a bit submissive and meek as well as being indecisive
-                and withdrawn. While I’m prone to be a little touchy about certain things, I do tend to have a bit of an
-                annoying side, since some of my actions tend to be bothersome to some people and I kinda struggle to
-                give some space, but most of it was done unintentional. I am even shown to sometimes have a bit of a
-                darker side, despite my harmless persona. I can also sometimes be real hard on myself whenever I said or
-                did something wrong, which often times make me repentant. I sometimes tend to act and/or say without
-                thinking</p>
+    <div class="container">
+        <div class="box1">
+            <img src="logo.png" alt="Logo" width="153" height="50" />
         </div>
+        <div class="box2"></div>
+        <div class="box3">
+            <nav>
+                <ul>
+                    <li class="li1">ELECTIONS</li>
+                    <li class="li2">AUTHOR'S ANGLE</li>
+                    <li class="li3">VIDEO</li>
+                    <li class="li4">KYRGYZ STUDIES</li>
+                    <li class="li5">ALL</li>
+                    <li class="li6">ABOUT</li>
+                    <li class="li7">HEALTH</li>
+                </ul>
+            </nav>
+            <span class="kyrgyz">KYRGYZ</span>
+            <div class="social-and-language">
+                <input type="text" placeholder="Введите текст" />
+                <span class="social">We are in social networks:</span>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-youtube"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-telegram"></i>
+            </div>
+        </div>
+        <div class="box4">
+
+            <div class="heading">
+                MOST READ
+            </div>
+            <div class="most-read-content" style="display: flex;">
+                <img src="person-image.png" alt="Man in suit" class="portrait"
+                    style="width: auto; opacity: 0.4; padding-top: 8px; padding-left: 8px; height: 400px" />
+                <ul class="news-list">
+                    <li class="l1">"The pilot project may not go further." School buses to be launched in Bishkek next
+                        week</li>
+                    <li class="l2">A man came to Kaindy to take a driving license exam with spy equipment, but was
+                        caught
+                        due to computer illiteracy (photo)
+                    </li>
+                    <li class="l3">Researchers from Cambridge discovered a new and unusual type of tulip in Kyrgyzstan
+                        (photo)</li>
+                    <li class="l4">"The relationship between our families will be even stronger." Melis Turganbaev
+                        became related to Melis Myrzakmatov shown (video)</li>
+                    <li class="l5">Which banks in Kyrgyzsta are the most profitable for non-residents?</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box5">
+            <div class="video-header">VIDEO</div>
+            <div class="video-content">
+                <img src="./box7.png" class="video-content-image">
+                <div class="video-title">Designer socks could make millions of people happier</div>
+                <div class="video-views">50374 Views</div>
+            </div>
+            <div class="video-footer"></div>
+        </div>
+        <div class="box6">
+            <section>
+                <article class="article-1">
+                    <img src="./box6img1.png" alt="Children receiving their first passports" class="img-1">
+                    <div>
+                        <h2 class="h1-1">For World Youth Day. 500 young citizens of the republic were solemnly presented
+                            with their
+                            first passports</h2>
+                        <p class="p-1">At the end of the event, the children were presented with souvenirs.</p>
+                        <time datetime="2022-11-15T18:31" class="datetime-1">11/15/2022 - 18:31</time>
+                    </div>
+                </article>
+
+                <article class="article-2">
+                    <img src="./box6img2.png" alt="Workers removing advertising banners in Bishkek" class="img-2">
+                    <div>
+                        <h2 class="h2-2">Bishkek got rid of two thousand advertising banners</h2>
+                        <p class="p-2">Clearing the capital from unauthorized advertising continues in an enhanced mode.
+                        </p>
+                        <time datetime="2022-11-15T17:32" class="datetime-2">11/15/2022 - 05:32 pm</time>
+                    </div>
+                </article>
+
+                <article class="article-3">
+                    <img src="./box6img3.png" alt="Portrait of Dairybek Orunbekov" class="img-3">
+                    <div>
+                        <h2 class="h2-3">Daiyrbek Orunbekov in response to criticism of Adakhan Madumarov: He is very
+                            poor in positive thoughts</h2>
+                        <p class="p-3">The head of the press service of the presidential administration noted that
+                            because of
+                            individual
+                            deputies, a negative opinion about the Jogorku Kenesh has developed in society.</p>
+                        <time datetime="2022-11-15T17:30" class="datetime-3">11/15/2022 - 05:30 pm</time>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <div class="box7">
+            <ul>
+                <li class="list1">HOME</li>
+                <li class="list2">POLITICS</li>
+                <li class="list3">ECONOMY</li>
+                <li class="list4">ANALYTICS</li>
+                <li class="list5">INCIDENTS</li>
+                <li class="list6">SOCIETY</li>
+                <li class="list7">GEOLOGY</li>
+                <li class="list8">IN THE WORLD</li>
+                <li class="list9">PRO ELECTIONS</li>
+            </ul>
+        </div>
+        <div class="box8">
+            <!-- Header row -->
+            <div class="interview-header">INTERVIEW</div>
+
+            <!-- Main content area -->
+            <div class="interview-content">
+                <h2>How do you feel about the idea of the Bishkek mayor's office to raise the fare for public transport?
+                </h2>
+
+                <!-- Radio button list -->
+                <form>
+                    <div class="custom-radio-option">
+                        <input type="radio" name="transport-opinion" id="radio1" />
+                        <label for="radio1">I don't care, I drive my car</label>
+                    </div>
+
+                    <div class="custom-radio-option">
+                        <input type="radio" name="transport-opinion" id="radio2" />
+                        <label for="radio2">
+                            Negative. The current prices are already hitting the pocket
+                        </label>
+                    </div>
+
+                    <div class="custom-radio-option">
+                        <input type="radio" name="transport-opinion" id="radio3" />
+                        <label for="radio3">
+                            I support, but the state of transport needs to be improved
+                        </label>
+                    </div>
+
+                    <div class="custom-radio-option">
+                        <input type="radio" name="transport-opinion" id="radio4" />
+                        <label for="radio4">Positively. Drivers also need to earn</label>
+                    </div>
+
+                    <div class="interview-buttons">
+                        <button type="button" class="btn-watch">Watch</button>
+                        <button type="button" class="btn-vote">Vote</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
     </div>
-
-    <h3>Favorites</h3>
-    <div id="fav">
-        <ol>
-            <li>Favorite Food 1</li>
-            <li>Favorite Food 2</li>
-            <li>Favorite Food 3</li>
-        </ol>
-
-    </div>
-
-    <div id="wish">
-        <h3>Wishes</h3>
-        <p>I actually had my dream come true. It just took me a while to realize it.
-
-            One night, I dreamed of the pasture just west and across the street from my house. There was the old barn as
-            I remembered it. In the pasture, there was a bay horse. That is a horse with a brown coat and black mane,
-            tail, and lower legs. It had a star on its forehead, a bit of white, a snip, on its nose, and two white hind
-            socks. I think I was just about to pet its nose, which not all horses like, when I woke up.
-
-            Several years later, after looking at several horses, I got to this farm to look at a horse that was
-            advertised.
-
-        </p>
-    </div>
-
 </body>
 
 </html>
