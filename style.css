@@ -173,70 +173,10 @@ body>img {
 
 }
 
-.custom-radio-option {
-    position: relative;
-    /* so we can place the circle absolutely inside */
-    padding-left: 30px;
-    /* space for the custom circle */
-    margin-bottom: 14px;
-    /* spacing between radio options */
-    cursor: pointer;
-    /* entire line is clickable */
-    font-size: 14px;
-    /* adjust to match your design */
-    line-height: 1.2;
-    /* or exact px if you want pixel-perfect alignment */
-}
+
 
 /* Hide the real radio visually, but keep it accessible to screen readers */
-.custom-radio-option input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-}
 
-/* The custom outer circle */
-.custom-radio-option::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    /* adjust top offset if you need to nudge vertically */
-    width: 18px;
-    /* outer circle diameter */
-    height: 18px;
-    border: 2px solid #333;
-    /* outer circle color */
-    border-radius: 50%;
-    background-color: #fff;
-    /* inside color, or transparent if you prefer */
-}
-
-/* The custom “checked” fill circle */
-.custom-radio-option::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 5px;
-    /* position inside the outer circle */
-    top: 5px;
-    width: 8px;
-    /* the filled dot’s diameter */
-    height: 8px;
-    border-radius: 50%;
-    background-color: #007bff;
-    /* the “checked” color */
-    opacity: 0;
-    /* hidden by default */
-    transition: opacity 0.2s;
-    /* fade in/out */
-}
-
-/* Show the filled circle when checked */
-.custom-radio-option input[type="radio"]:checked~label::after {
-    opacity: 1;
-}
 
 
 
