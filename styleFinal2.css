@@ -4,15 +4,15 @@
 }
 
 body {
-    background-image: url(https://cdn.imgchest.com/files/6yxkcg98k7w.png);
+    /* background-image: url(https://cdn.imgchest.com/files/6yxkcg98k7w.png); */
     background-repeat: no-repeat;
     max-width: 1202px;
     min-height: 1583px;
     font-size: 2rem;
     color: blue;
     margin: 0;
+    /* optional: center the body */
     padding: 0;
-    opacity: 0.4;
 }
 
 
@@ -53,9 +53,7 @@ body {
 
 .advertising {
     height: 170px;
-
     display: block;
-
 }
 
 .box2-right .url {
@@ -71,7 +69,6 @@ body {
 }
 
 /* Heading (the large text) */
-
 
 /* Paragraph text */
 .box2-right p {
@@ -112,7 +109,6 @@ body {
     padding-left: 8px;
 }
 
-
 .box2-right .url:hover {
     text-decoration: underline;
 }
@@ -135,27 +131,15 @@ body {
 
 .box4 {
     grid-area: four;
+
     font-family: Arial, Helvetica, sans-serif;
-    opacity: 0.4;
 }
 
-
-.box4 .most-read-content {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-.portrait {
-    padding-top: 8px;
-    padding-left: 8px;
-    height: 400px;
-}
-
-.box4 .news-list {
-    margin-left: -30px;
+.news-list {
     list-style: none;
+    margin: 0;
     font-weight: bold;
+    padding-left: 12px;
     font-size: 13.8px;
     color: #333;
 }
@@ -193,7 +177,6 @@ body {
     border-bottom: none;
 }
 
-
 .heading {
     background-color: #007bff;
     color: #fff;
@@ -203,17 +186,13 @@ body {
     padding-top: 8px;
     padding-bottom: 10px;
     display: flex;
-
 }
-
 
 .box5 {
     grid-area: five;
-    opacity: 0.5;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-
 
 .box7 {
     grid-area: seven;
@@ -224,15 +203,14 @@ body {
 
 .box8 {
     grid-area: eight;
-    opacity: 0.4;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin: 0;
     padding: 0;
 }
 
+/* Re-declared for clarity */
 .box8 {
-    grid-area: eight;
     display: grid;
     grid-template-rows: auto 1fr;
     background-color: #fff;
@@ -260,10 +238,7 @@ body {
     line-height: 1.1;
     padding-top: 8px;
     margin-bottom: 10px;
-
 }
-
-
 
 .interview-buttons {
     display: flex;
@@ -282,27 +257,23 @@ body {
     font-size: 14px;
     cursor: pointer;
     border-radius: 2px;
-    /* optional slight rounding */
 }
 
 .interview-buttons .btn-watch:hover,
 .interview-buttons .btn-vote:hover {
     background-color: #0056b3;
-    /* darker blue on hover */
 }
 
+/* Radio styling */
 .custom-radio-option {
     display: flex;
     align-items: center;
     margin-left: 10px;
-
 }
 
 .custom-radio-option input[type="radio"] {
     transform: scale(1.6);
-    /* Adjust as needed, e.g., 1.5, 2, etc. */
     margin-right: 0.5em;
-    /* Space between radio and label */
     cursor: pointer;
 }
 
@@ -368,9 +339,7 @@ body {
 }
 
 .social-and-language span {
-
     margin-bottom: 5px;
-
     padding-right: 4px;
 }
 
@@ -380,9 +349,7 @@ body {
     margin-right: 2px;
 }
 
-/* Icon styling  */
-
-/* Adjusting specific icon sizes as previously done inline */
+/* Social icons */
 .social-and-language i.fa.fa-twitter {
     font-size: 20px;
     margin-right: 12px;
@@ -413,13 +380,10 @@ body {
     margin-bottom: 7px;
 }
 
-
-
+/* Video sections */
 .video-header {
     background-color: blue;
-    /* Blue background */
     color: #fff;
-    /* White text */
     text-align: center;
     font-size: 18px;
     font-weight: bold;
@@ -428,13 +392,11 @@ body {
     align-items: center;
     padding-bottom: 10px;
     padding-top: 11px;
-
 }
 
 .video-footer {
     background-color: gray;
     height: 80px;
-    /* Blue background */
     color: #fff;
 }
 
@@ -462,7 +424,6 @@ body {
     color: #555;
     margin-top: 0px;
 }
-
 
 /* Box7 ul (bottom navigation) */
 .box7 ul {
@@ -526,10 +487,10 @@ body {
     color: #1d1d1d;
 }
 
+/* Box6 */
 .box6 section {
     display: flex;
     flex-direction: column;
-    opacity: 0.7;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
@@ -537,7 +498,6 @@ body {
 .box6 {
     grid-area: six;
 }
-
 
 .box6 .article-1 {
     line-height: 2.1;
@@ -586,7 +546,6 @@ body {
     align-items: center;
     background-color: #fff;
     padding-left: 25px;
-
 }
 
 .box6 .article-2 .img-2 {
@@ -604,7 +563,6 @@ body {
     font-size: 14px;
     margin-top: 13px;
     padding-left: 3px;
-
 }
 
 .box6 .article-2 .p-2 {
@@ -645,7 +603,6 @@ body {
     font-size: 13.8px;
     margin-top: 30px;
     padding-left: 4.7px;
-    /* line-height: 1.9; */
 }
 
 .box6 .article-3 .p-3 {
@@ -661,7 +618,330 @@ body {
     color: #666;
 }
 
+.box4 {
+    grid-area: four;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+
+.box4 .most-read-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.portrait {
+    padding-top: 8px;
+    padding-left: 8px;
+    height: 400px;
+}
+
+.box4 .news-list {
+
+    list-style: none;
+    font-weight: bold;
+    font-size: 13.8px;
+    color: #333;
+}
+
+.news-list li {
+    border-bottom: 1px solid #ddd;
+}
+
+/* --------------------------------------------- */
+/* ADDITIONAL RESPONSIVE & HAMBURGER STYLES BELOW */
+/* --------------------------------------------- */
+
+/* Hide hamburger by default on desktop, show menus normally */
 .hamburger {
-    display: none !important;
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: blue;
+    margin: 4px 0;
+}
+
+@media (max-width: 600px) {
+
+    /* Restructure the grid for mobile */
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "one"
+            "seven"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+            "eight";
+    }
+
+    .box2 {
+        flex-direction: column;
+    }
+
+    .box4 .most-read-content {
+        display: flex;
+        flex-direction: column;
+        /* Stack the image and text vertically */
+        align-items: center;
+        /* Center-align the content */
+        gap: 20px;
+        /* Add spacing between the image and the text */
+    }
+
+    .box4 .portrait {
+        width: 100%;
+
+        height: auto;
+
+        margin-bottom: 10px;
+        /* Add space below the image */
+    }
+
+    .box4 .news-list {
+        width: 100%;
+        /* Make the news list take full width */
+        text-align: left;
+        /* Align text to the left */
+        line-height: 1.6;
+        /* Improve readability */
+        padding: 10px;
+        /* Add some padding for spacing */
+    }
+
+    /* Make the advertising image 100% width */
+    .box2 .advertising {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+        /* ensure it’s displayed as a block-level element */
+    }
+
+    /* Box3 hamburger: show on mobile, hide nav by default */
+    .box3 {
+        flex-wrap: wrap;
+        /* so the hamburger can be on its own line if needed */
+    }
+
+    .box3 .hamburger {
+        display: flex;
+        /* show hamburger on mobile */
+    }
+
+    .box3 nav ul {
+        display: none;
+        /* hide the nav by default on mobile */
+        flex-direction: column;
+        /* stacked links */
+        background-color: #ddd;
+        /* optional BG for mobile menu */
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    .box3 nav ul.nav-active {
+        /* show the nav when active */
+        display: flex !important;
+    }
+
+    /* Box7 hamburger: show on mobile, hide bottom nav by default */
+    .box7 {
+        flex-wrap: wrap;
+    }
+
+    .box7 .hamburger {
+        display: flex;
+    }
+
+    .box7 ul {
+        display: none;
+        flex-direction: column;
+        background-color: #ddd;
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    .box7 ul.nav-active {
+        display: flex !important;
+    }
+
+    /* Make Box4's text go under the picture */
+    .most-read-content {
+        flex-direction: column;
+    }
+
+    .most-read-content .portrait {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        /* center or remove left padding */
+        margin: 0 auto;
+        /* optional: center horizontally */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+
+    /* Adjust the grid layout */
+    .container {
+        grid-template-columns: 1fr 1fr;
+        /* Two columns for this range */
+        grid-template-areas:
+            "one one"
+            "two two"
+            "three three"
+            "four six"
+            "five eight"
+            "seven seven";
+        gap: 20px;
+        /* Add spacing between elements */
+    }
+
+    /* Box1: Center the logo */
+    .box1 {
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* Box2: Horizontal layout for image and text */
+    .box2 {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .box2 .advertising {
+        width: 50%;
+        /* Image takes half of the width */
+        height: auto;
+        max-width: 100%;
+    }
+
+    .box2-right {
+        width: 50%;
+        /* Text takes the other half */
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
+    /* Box3: Horizontal navigation with some spacing */
+    .box3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .box3 nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .box4 .most-read-content {
+        display: flex;
+        flex-direction: column;
+        /* Stack the image and text vertically */
+        align-items: center;
+        /* Center-align the content */
+        gap: 20px;
+        /* Add spacing between the image and the text */
+    }
+
+    .box4 .portrait {
+        width: 100%;
+        /* Make the image take full width */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin-bottom: 10px;
+        /* Add space below the image */
+    }
+
+    .box4 .news-list {
+        width: 100%;
+        /* Make the news list take full width */
+        text-align: left;
+        /* Align text to the left */
+        line-height: 1.6;
+        /* Improve readability */
+        padding: 10px;
+        /* Add some padding for spacing */
+    }
+
+    /* Box5: Center-align video content */
+    .box5 {
+        text-align: center;
+    }
+
+    .box5 .video-content-image {
+        width: 90%;
+        height: auto;
+    }
+
+    .box5 .video-title {
+        padding: 10px;
+    }
+
+    /* Box6: Articles in two-column layout */
+    .box6 section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .box6 article {
+        flex: 0 0 45%;
+        /* Two articles per row */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    .box6 article img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    /* Box7: Horizontal navigation at the bottom */
+    .box7 ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    /* Box8: Center-align interview content */
+    .box8 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .box8 .interview-content {
+        padding: 10px 20px;
+    }
 }

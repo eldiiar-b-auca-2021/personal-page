@@ -2,36 +2,61 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 10</title>
-    <link rel="stylesheet" href="styleFinal.css" class="style">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Your original CSS link -->
+    <link rel="stylesheet" href="styleFinal.css" class="style" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
-
+<script>
+    function switchStyle() {
+        let style = document.querySelector('.style');
+        if (style.getAttribute('href') == 'styleFinal2.css') {
+            style.setAttribute('href', 'styleFinal.css');
+        } else {
+            style.setAttribute('href', 'styleFinal2.css');
+        }
+    }
+</script>
 
 <body>
-    <img src='https://cdn.imgchest.com/files/j7mmcrer276.png' style='position: absolute; top:0; left:0;z-index:-1'>
-    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+    <!-- <img src="https://cdn.imgchest.com/files/j7mmcrer276.png"
+        style="position: absolute; top: 0; left: 0; z-index: -1" /> -->
+    <button onclick="switchStyle()" style="position: absolute; top: 0; right: 0">
+        Style
+    </button>
 
     <div class="container">
+        <!-- Box1 -->
         <div class="box1">
             <img src="logo.png" alt="Logo" width="153" height="50" />
         </div>
+
+        <!-- Box2 -->
         <div class="box2">
             <img src="./advertising.png" alt="ClubRare Liquidity Contest" class="advertising" />
             <div class="box2-right">
                 <a href="#" class="url">lpcontest.clubrare.xyz</a>
                 <h2>Add 300 USD liquidity and get a chance to free $4000!</h2>
                 <p>
-                    Clubrare Crypto Compeption. Everyones wins.
+                    Clubrare Crypto Compeption. Everyone wins.
                     100k USD on the table. Join now!
                 </p>
                 <a href="#" class="cta-btn">Find out more</a>
             </div>
         </div>
+
+        <!-- Box3 (Top Nav) -->
         <div class="box3">
+            <!-- Hamburger for mobile -->
+            <button class="hamburger" onclick="toggleBox3Menu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <nav>
                 <ul>
                     <li class="li1">ELECTIONS</li>
@@ -54,78 +79,106 @@
                 <i class="fa fa-telegram"></i>
             </div>
         </div>
-        <div class="box4">
 
-            <div class="heading">
-                MOST READ
-            </div>
-            <div class="most-read-content" style="display: flex;">
-                <img src="person-image.png" alt="Man in suit" class="portrait"
-                    style="width: auto; opacity: 0.4; padding-top: 8px; padding-left: 8px; height: 400px" />
+        <div class="box4">
+            <div class="heading">MOST READ</div>
+            <div class="most-read-content">
+                <img src="person-image.png" alt="Man in suit" class="portrait" />
                 <ul class="news-list">
-                    <li class="l1">"The pilot project may not go further." School buses to be launched in Bishkek next
-                        week</li>
-                    <li class="l2">A man came to Kaindy to take a driving license exam with spy equipment, but was
-                        caught
-                        due to computer illiteracy (photo)
+                    <li class="l1">
+                        "The pilot project may not go further." School buses to be launched
+                        in Bishkek next week
                     </li>
-                    <li class="l3">Researchers from Cambridge discovered a new and unusual type of tulip in Kyrgyzstan
-                        (photo)</li>
-                    <li class="l4">"The relationship between our families will be even stronger." Melis Turganbaev
-                        became related to Melis Myrzakmatov shown (video)</li>
-                    <li class="l5">Which banks in Kyrgyzsta are the most profitable for non-residents?</li>
+                    <li class="l2">
+                        A man came to Kaindy to take a driving license exam with spy
+                        equipment, but was caught due to computer illiteracy (photo)
+                    </li>
+                    <li class="l3">
+                        Researchers from Cambridge discovered a new and unusual type of
+                        tulip in Kyrgyzstan (photo)
+                    </li>
+                    <li class="l4">
+                        "The relationship between our families will be even stronger." Melis
+                        Turganbaev became related to Melis Myrzakmatov shown (video)
+                    </li>
+                    <li class="l5">
+                        Which banks in Kyrgyzsta are the most profitable for non-residents?
+                    </li>
                 </ul>
             </div>
         </div>
 
+
+        <!-- Box5 -->
         <div class="box5">
             <div class="video-header">VIDEO</div>
             <div class="video-content">
-                <img src="./box7.png" class="video-content-image">
-                <div class="video-title">Designer socks could make millions of people happier</div>
+                <img src="./box7.png" class="video-content-image" />
+                <div class="video-title">
+                    Designer socks could make millions of people happier
+                </div>
                 <div class="video-views">50374 Views</div>
             </div>
             <div class="video-footer"></div>
         </div>
+
+        <!-- Box6 -->
         <div class="box6">
             <section>
                 <article class="article-1">
-                    <img src="./box6img1.png" alt="Children receiving their first passports" class="img-1">
+                    <img src="./box6img1.png" alt="Children receiving their first passports" class="img-1" />
                     <div>
-                        <h2 class="h1-1">For World Youth Day. 500 young citizens of the republic were solemnly presented
-                            with their
-                            first passports</h2>
-                        <p class="p-1">At the end of the event, the children were presented with souvenirs.</p>
+                        <h2 class="h1-1">
+                            For World Youth Day. 500 young citizens of the republic were
+                            solemnly presented with their first passports
+                        </h2>
+                        <p class="p-1">
+                            At the end of the event, the children were presented with
+                            souvenirs.
+                        </p>
                         <time datetime="2022-11-15T18:31" class="datetime-1">11/15/2022 - 18:31</time>
                     </div>
                 </article>
 
                 <article class="article-2">
-                    <img src="./box6img2.png" alt="Workers removing advertising banners in Bishkek" class="img-2">
+                    <img src="./box6img2.png" alt="Workers removing advertising banners in Bishkek" class="img-2" />
                     <div>
                         <h2 class="h2-2">Bishkek got rid of two thousand advertising banners</h2>
-                        <p class="p-2">Clearing the capital from unauthorized advertising continues in an enhanced mode.
+                        <p class="p-2">
+                            Clearing the capital from unauthorized advertising continues in an
+                            enhanced mode.
                         </p>
                         <time datetime="2022-11-15T17:32" class="datetime-2">11/15/2022 - 05:32 pm</time>
                     </div>
                 </article>
 
                 <article class="article-3">
-                    <img src="./box6img3.png" alt="Portrait of Dairybek Orunbekov" class="img-3">
+                    <img src="./box6img3.png" alt="Portrait of Dairybek Orunbekov" class="img-3" />
                     <div>
-                        <h2 class="h2-3">Daiyrbek Orunbekov in response to criticism of Adakhan Madumarov: He is very
-                            poor in positive thoughts</h2>
-                        <p class="p-3">The head of the press service of the presidential administration noted that
-                            because of
-                            individual
-                            deputies, a negative opinion about the Jogorku Kenesh has developed in society.</p>
+                        <h2 class="h2-3">
+                            Daiyrbek Orunbekov in response to criticism of Adakhan Madumarov:
+                            He is very poor in positive thoughts
+                        </h2>
+                        <p class="p-3">
+                            The head of the press service of the presidential administration
+                            noted that because of individual deputies, a negative opinion
+                            about the Jogorku Kenesh has developed in society.
+                        </p>
                         <time datetime="2022-11-15T17:30" class="datetime-3">11/15/2022 - 05:30 pm</time>
                     </div>
                 </article>
             </section>
         </div>
 
+        <!-- Box7 (Bottom Nav) -->
         <div class="box7">
+            <!-- Hamburger for mobile -->
+            <button class="hamburger" onclick="toggleBox7Menu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <ul>
                 <li class="list1">HOME</li>
                 <li class="list2">POLITICS</li>
@@ -138,10 +191,14 @@
                 <li class="list9">PRO ELECTIONS</li>
             </ul>
         </div>
+
+        <!-- Box8 -->
         <div class="box8">
             <div class="interview-header">INTERVIEW</div>
             <div class="interview-content">
-                <h2>How do you feel about the idea of the Bishkek mayor's office to raise the fare for public transport?
+                <h2>
+                    How do you feel about the idea of the Bishkek mayor's office to raise
+                    the fare for public transport?
                 </h2>
 
                 <form>
@@ -174,11 +231,27 @@
                         <button type="button" class="btn-vote">Vote</button>
                     </div>
                 </form>
-
             </div>
         </div>
 
     </div>
+
+    <!-- Optional JS to handle hamburger toggles -->
+    <script>
+        function toggleBox3Menu() {
+            // Toggles a class that hides/shows the top nav (Box3) on mobile
+            document
+                .querySelector(".box3 nav ul")
+                .classList.toggle("nav-active");
+        }
+
+        function toggleBox7Menu() {
+            // Toggles a class that hides/shows the bottom nav (Box7) on mobile
+            document
+                .querySelector(".box7 ul")
+                .classList.toggle("nav-active");
+        }
+    </script>
 </body>
 
 </html>
