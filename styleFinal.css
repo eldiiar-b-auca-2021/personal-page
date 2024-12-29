@@ -15,9 +15,6 @@ body {
     opacity: 0.4;
 }
 
-
-
-/* Container Grid Layout */
 .container {
     display: grid;
     grid-template-rows: minmax(50px, auto) minmax(175px, auto) minmax(65px, auto) minmax(369px, auto) minmax(65px, auto) minmax(327px, auto);
@@ -35,7 +32,6 @@ body {
     border: 2px dashed blue;
 }
 
-/* Boxes */
 .box1 {
     grid-area: one;
     display: flex;
@@ -53,9 +49,7 @@ body {
 
 .advertising {
     height: 170px;
-
     display: block;
-
 }
 
 .box2-right .url {
@@ -70,10 +64,6 @@ body {
     text-decoration: underline;
 }
 
-/* Heading (the large text) */
-
-
-/* Paragraph text */
 .box2-right p {
     font-size: 15px;
     margin-bottom: 2rem;
@@ -81,7 +71,6 @@ body {
     color: #555;
 }
 
-/* CTA button */
 .box2-right .cta-btn {
     display: inline-block;
     padding: 8px 12px;
@@ -112,7 +101,6 @@ body {
     padding-left: 8px;
 }
 
-
 .box2-right .url:hover {
     text-decoration: underline;
 }
@@ -138,7 +126,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     opacity: 0.4;
 }
-
 
 .box4 .most-read-content {
     display: flex;
@@ -193,7 +180,6 @@ body {
     border-bottom: none;
 }
 
-
 .heading {
     background-color: #007bff;
     color: #fff;
@@ -203,9 +189,7 @@ body {
     padding-top: 8px;
     padding-bottom: 10px;
     display: flex;
-
 }
-
 
 .box5 {
     grid-area: five;
@@ -213,7 +197,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-
 
 .box7 {
     grid-area: seven;
@@ -260,10 +243,7 @@ body {
     line-height: 1.1;
     padding-top: 8px;
     margin-bottom: 10px;
-
 }
-
-
 
 .interview-buttons {
     display: flex;
@@ -282,31 +262,25 @@ body {
     font-size: 14px;
     cursor: pointer;
     border-radius: 2px;
-    /* optional slight rounding */
 }
 
 .interview-buttons .btn-watch:hover,
 .interview-buttons .btn-vote:hover {
     background-color: #0056b3;
-    /* darker blue on hover */
 }
 
 .custom-radio-option {
     display: flex;
     align-items: center;
     margin-left: 10px;
-
 }
 
 .custom-radio-option input[type="radio"] {
     transform: scale(1.6);
-    /* Adjust as needed, e.g., 1.5, 2, etc. */
     margin-right: 0.5em;
-    /* Space between radio and label */
     cursor: pointer;
 }
 
-/* Top Navigation (box3) */
 .box3 nav ul {
     display: flex;
     list-style: none;
@@ -339,7 +313,6 @@ body {
     padding-left: 2px;
 }
 
-/* Kyrgyz label in box3 */
 .box3 .kyrgyz {
     font-size: 12px;
     padding-bottom: 5px;
@@ -348,7 +321,6 @@ body {
     color: red;
 }
 
-/* Social and language section in box3 */
 .box3 .social-and-language {
     font-size: 13px;
     font-weight: bold;
@@ -358,7 +330,6 @@ body {
     align-items: center;
 }
 
-/* Input field styling */
 .social-and-language input {
     width: 110px;
     height: 28px;
@@ -368,21 +339,15 @@ body {
 }
 
 .social-and-language span {
-
     margin-bottom: 5px;
-
     padding-right: 4px;
 }
 
-/* "We are in social networks:" label */
 .social-and-language .social {
     font-size: 13px;
     margin-right: 2px;
 }
 
-/* Icon styling  */
-
-/* Adjusting specific icon sizes as previously done inline */
 .social-and-language i.fa.fa-twitter {
     font-size: 20px;
     margin-right: 12px;
@@ -413,13 +378,9 @@ body {
     margin-bottom: 7px;
 }
 
-
-
 .video-header {
     background-color: blue;
-    /* Blue background */
     color: #fff;
-    /* White text */
     text-align: center;
     font-size: 18px;
     font-weight: bold;
@@ -428,13 +389,11 @@ body {
     align-items: center;
     padding-bottom: 10px;
     padding-top: 11px;
-
 }
 
 .video-footer {
     background-color: gray;
     height: 80px;
-    /* Blue background */
     color: #fff;
 }
 
@@ -463,8 +422,6 @@ body {
     margin-top: 0px;
 }
 
-
-/* Box7 ul (bottom navigation) */
 .box7 ul {
     display: flex;
     list-style: none;
@@ -515,11 +472,7 @@ body {
 }
 
 .box3 ul {
-    background: repeating-linear-gradient(140deg,
-            #ccc,
-            #ccc 1px,
-            #fff 1px,
-            #fff 3px);
+    background: repeating-linear-gradient(140deg, #ccc, #ccc 1px, #fff 1px, #fff 3px);
 }
 
 .box3 {
@@ -537,7 +490,6 @@ body {
 .box6 {
     grid-area: six;
 }
-
 
 .box6 .article-1 {
     line-height: 2.1;
@@ -577,7 +529,6 @@ body {
     color: #666;
 }
 
-/* divide */
 .box6 .article-2 {
     line-height: 2.1;
     font-size: 8px;
@@ -586,7 +537,6 @@ body {
     align-items: center;
     background-color: #fff;
     padding-left: 25px;
-
 }
 
 .box6 .article-2 .img-2 {
@@ -604,7 +554,6 @@ body {
     font-size: 14px;
     margin-top: 13px;
     padding-left: 3px;
-
 }
 
 .box6 .article-2 .p-2 {
@@ -619,7 +568,6 @@ body {
     color: #666;
 }
 
-/* divide */
 .box6 .article-3 {
     line-height: 2.2;
     font-size: 8px;
@@ -645,7 +593,6 @@ body {
     font-size: 13.8px;
     margin-top: 30px;
     padding-left: 4.7px;
-    /* line-height: 1.9; */
 }
 
 .box6 .article-3 .p-3 {
@@ -660,7 +607,6 @@ body {
     margin-top: 10px;
     color: #666;
 }
-
 
 .hamburger {
     display: none !important;

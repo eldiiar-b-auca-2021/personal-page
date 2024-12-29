@@ -5,8 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 10</title>
-    <!-- Your original CSS link -->
+    <title>Final Project</title>
     <link rel="stylesheet" href="styleFinal.css" class="style" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
@@ -29,12 +28,9 @@
     </button>
 
     <div class="container">
-        <!-- Box1 -->
         <div class="box1">
             <img src="logo.png" alt="Logo" width="153" height="50" />
         </div>
-
-        <!-- Box2 -->
         <div class="box2">
             <img src="./advertising.png" alt="ClubRare Liquidity Contest" class="advertising" />
             <div class="box2-right">
@@ -47,10 +43,7 @@
                 <a href="#" class="cta-btn">Find out more</a>
             </div>
         </div>
-
-        <!-- Box3 (Top Nav) -->
         <div class="box3">
-            <!-- Hamburger for mobile -->
             <button class="hamburger" onclick="toggleBox3Menu()">
                 <span></span>
                 <span></span>
@@ -108,8 +101,6 @@
             </div>
         </div>
 
-
-        <!-- Box5 -->
         <div class="box5">
             <div class="video-header">VIDEO</div>
             <div class="video-content">
@@ -121,8 +112,6 @@
             </div>
             <div class="video-footer"></div>
         </div>
-
-        <!-- Box6 -->
         <div class="box6">
             <section>
                 <article class="article-1">
@@ -169,10 +158,8 @@
                 </article>
             </section>
         </div>
-
-        <!-- Box7 (Bottom Nav) -->
         <div class="box7">
-            <!-- Hamburger for mobile -->
+
             <button class="hamburger" onclick="toggleBox7Menu()">
                 <span></span>
                 <span></span>
@@ -236,17 +223,16 @@
 
     </div>
 
-    <!-- Optional JS to handle hamburger toggles -->
     <script>
         function toggleBox3Menu() {
-            // Toggles a class that hides/shows the top nav (Box3) on mobile
+
             document
                 .querySelector(".box3 nav ul")
                 .classList.toggle("nav-active");
         }
 
         function toggleBox7Menu() {
-            // Toggles a class that hides/shows the bottom nav (Box7) on mobile
+
             document
                 .querySelector(".box7 ul")
                 .classList.toggle("nav-active");

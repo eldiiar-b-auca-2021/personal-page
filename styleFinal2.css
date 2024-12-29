@@ -4,20 +4,15 @@
 }
 
 body {
-    /* background-image: url(https://cdn.imgchest.com/files/6yxkcg98k7w.png); */
     background-repeat: no-repeat;
     max-width: 1202px;
     min-height: 1583px;
     font-size: 2rem;
     color: blue;
     margin: 0;
-    /* optional: center the body */
     padding: 0;
 }
 
-
-
-/* Container Grid Layout */
 .container {
     display: grid;
     grid-template-rows: minmax(50px, auto) minmax(175px, auto) minmax(65px, auto) minmax(369px, auto) minmax(65px, auto) minmax(327px, auto);
@@ -35,7 +30,6 @@ body {
     border: 2px dashed blue;
 }
 
-/* Boxes */
 .box1 {
     grid-area: one;
     display: flex;
@@ -68,9 +62,6 @@ body {
     text-decoration: underline;
 }
 
-/* Heading (the large text) */
-
-/* Paragraph text */
 .box2-right p {
     font-size: 15px;
     margin-bottom: 2rem;
@@ -78,7 +69,6 @@ body {
     color: #555;
 }
 
-/* CTA button */
 .box2-right .cta-btn {
     display: inline-block;
     padding: 8px 12px;
@@ -131,7 +121,6 @@ body {
 
 .box4 {
     grid-area: four;
-
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -209,7 +198,6 @@ body {
     padding: 0;
 }
 
-/* Re-declared for clarity */
 .box8 {
     display: grid;
     grid-template-rows: auto 1fr;
@@ -264,7 +252,6 @@ body {
     background-color: #0056b3;
 }
 
-/* Radio styling */
 .custom-radio-option {
     display: flex;
     align-items: center;
@@ -277,7 +264,6 @@ body {
     cursor: pointer;
 }
 
-/* Top Navigation (box3) */
 .box3 nav ul {
     display: flex;
     list-style: none;
@@ -310,7 +296,6 @@ body {
     padding-left: 2px;
 }
 
-/* Kyrgyz label in box3 */
 .box3 .kyrgyz {
     font-size: 12px;
     padding-bottom: 5px;
@@ -319,7 +304,6 @@ body {
     color: red;
 }
 
-/* Social and language section in box3 */
 .box3 .social-and-language {
     font-size: 13px;
     font-weight: bold;
@@ -329,7 +313,6 @@ body {
     align-items: center;
 }
 
-/* Input field styling */
 .social-and-language input {
     width: 110px;
     height: 28px;
@@ -343,13 +326,11 @@ body {
     padding-right: 4px;
 }
 
-/* "We are in social networks:" label */
 .social-and-language .social {
     font-size: 13px;
     margin-right: 2px;
 }
 
-/* Social icons */
 .social-and-language i.fa.fa-twitter {
     font-size: 20px;
     margin-right: 12px;
@@ -380,7 +361,6 @@ body {
     margin-bottom: 7px;
 }
 
-/* Video sections */
 .video-header {
     background-color: blue;
     color: #fff;
@@ -425,7 +405,6 @@ body {
     margin-top: 0px;
 }
 
-/* Box7 ul (bottom navigation) */
 .box7 ul {
     display: flex;
     list-style: none;
@@ -476,18 +455,13 @@ body {
 }
 
 .box3 ul {
-    background: repeating-linear-gradient(140deg,
-            #ccc,
-            #ccc 1px,
-            #fff 1px,
-            #fff 3px);
+    background: repeating-linear-gradient(140deg, #ccc, #ccc 1px, #fff 1px, #fff 3px);
 }
 
 .box3 {
     color: #1d1d1d;
 }
 
-/* Box6 */
 .box6 section {
     display: flex;
     flex-direction: column;
@@ -537,7 +511,6 @@ body {
     color: #666;
 }
 
-/* divide */
 .box6 .article-2 {
     line-height: 2.1;
     font-size: 8px;
@@ -577,7 +550,6 @@ body {
     color: #666;
 }
 
-/* divide */
 .box6 .article-3 {
     line-height: 2.2;
     font-size: 8px;
@@ -623,7 +595,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .box4 .most-read-content {
     display: flex;
     flex-direction: row;
@@ -637,7 +608,6 @@ body {
 }
 
 .box4 .news-list {
-
     list-style: none;
     font-weight: bold;
     font-size: 13.8px;
@@ -648,11 +618,6 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
-/* --------------------------------------------- */
-/* ADDITIONAL RESPONSIVE & HAMBURGER STYLES BELOW */
-/* --------------------------------------------- */
-
-/* Hide hamburger by default on desktop, show menus normally */
 .hamburger {
     display: none;
     background: none;
@@ -671,8 +636,6 @@ body {
 }
 
 @media (max-width: 600px) {
-
-    /* Restructure the grid for mobile */
     .container {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -693,70 +656,50 @@ body {
     .box4 .most-read-content {
         display: flex;
         flex-direction: column;
-        /* Stack the image and text vertically */
         align-items: center;
-        /* Center-align the content */
         gap: 20px;
-        /* Add spacing between the image and the text */
     }
 
     .box4 .portrait {
         width: 100%;
-
         height: auto;
-
         margin-bottom: 10px;
-        /* Add space below the image */
     }
 
     .box4 .news-list {
         width: 100%;
-        /* Make the news list take full width */
         text-align: left;
-        /* Align text to the left */
         line-height: 1.6;
-        /* Improve readability */
         padding: 10px;
-        /* Add some padding for spacing */
     }
 
-    /* Make the advertising image 100% width */
     .box2 .advertising {
         width: 100%;
         height: auto;
         max-width: 100%;
         display: block;
-        /* ensure it’s displayed as a block-level element */
     }
 
-    /* Box3 hamburger: show on mobile, hide nav by default */
     .box3 {
         flex-wrap: wrap;
-        /* so the hamburger can be on its own line if needed */
     }
 
     .box3 .hamburger {
         display: flex;
-        /* show hamburger on mobile */
     }
 
     .box3 nav ul {
         display: none;
-        /* hide the nav by default on mobile */
         flex-direction: column;
-        /* stacked links */
         background-color: #ddd;
-        /* optional BG for mobile menu */
         padding: 10px;
         margin-top: 5px;
     }
 
     .box3 nav ul.nav-active {
-        /* show the nav when active */
         display: flex !important;
     }
 
-    /* Box7 hamburger: show on mobile, hide bottom nav by default */
     .box7 {
         flex-wrap: wrap;
     }
@@ -777,7 +720,6 @@ body {
         display: flex !important;
     }
 
-    /* Make Box4's text go under the picture */
     .most-read-content {
         flex-direction: column;
     }
@@ -786,18 +728,13 @@ body {
         width: 100%;
         height: auto;
         padding-left: 0;
-        /* center or remove left padding */
         margin: 0 auto;
-        /* optional: center horizontally */
     }
 }
 
 @media (min-width: 601px) and (max-width: 1200px) {
-
-    /* Adjust the grid layout */
     .container {
         grid-template-columns: 1fr 1fr;
-        /* Two columns for this range */
         grid-template-areas:
             "one one"
             "two two"
@@ -806,16 +743,13 @@ body {
             "five eight"
             "seven seven";
         gap: 20px;
-        /* Add spacing between elements */
     }
 
-    /* Box1: Center the logo */
     .box1 {
         text-align: center;
         justify-content: center;
     }
 
-    /* Box2: Horizontal layout for image and text */
     .box2 {
         display: flex;
         flex-direction: row;
@@ -824,23 +758,18 @@ body {
 
     .box2 .advertising {
         width: 50%;
-        /* Image takes half of the width */
         height: auto;
         max-width: 100%;
     }
 
     .box2-right {
         width: 50%;
-        /* Text takes the other half */
         padding: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-
-
-    /* Box3: Horizontal navigation with some spacing */
     .box3 {
         display: flex;
         flex-wrap: wrap;
@@ -859,34 +788,23 @@ body {
     .box4 .most-read-content {
         display: flex;
         flex-direction: column;
-        /* Stack the image and text vertically */
         align-items: center;
-        /* Center-align the content */
         gap: 20px;
-        /* Add spacing between the image and the text */
     }
 
     .box4 .portrait {
         width: 100%;
-        /* Make the image take full width */
         height: auto;
-        /* Maintain aspect ratio */
         margin-bottom: 10px;
-        /* Add space below the image */
     }
 
     .box4 .news-list {
         width: 100%;
-        /* Make the news list take full width */
         text-align: left;
-        /* Align text to the left */
         line-height: 1.6;
-        /* Improve readability */
         padding: 10px;
-        /* Add some padding for spacing */
     }
 
-    /* Box5: Center-align video content */
     .box5 {
         text-align: center;
     }
@@ -900,7 +818,6 @@ body {
         padding: 10px;
     }
 
-    /* Box6: Articles in two-column layout */
     .box6 section {
         display: flex;
         flex-wrap: wrap;
@@ -910,7 +827,6 @@ body {
 
     .box6 article {
         flex: 0 0 45%;
-        /* Two articles per row */
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -926,7 +842,6 @@ body {
         border-radius: 5px;
     }
 
-    /* Box7: Horizontal navigation at the bottom */
     .box7 ul {
         display: flex;
         flex-wrap: wrap;
@@ -935,7 +850,6 @@ body {
         padding: 10px;
     }
 
-    /* Box8: Center-align interview content */
     .box8 {
         text-align: center;
         padding: 10px;
