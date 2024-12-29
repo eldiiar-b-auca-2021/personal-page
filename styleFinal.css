@@ -46,6 +46,84 @@ body>img {
 
 .box2 {
     grid-area: two;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.advertising {
+    height: 170px;
+
+    display: block;
+
+}
+
+.box2-right .url {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+.box2-right .url:hover {
+    text-decoration: underline;
+}
+
+/* Heading (the large text) */
+
+
+/* Paragraph text */
+.box2-right p {
+    font-size: 15px;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+    color: #555;
+}
+
+/* CTA button */
+.box2-right .cta-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #2a64db;
+    color: blue;
+    border-radius: 4px;
+    opacity: 0.4;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.box2-right .cta-btn:hover {
+    background-color: #1d4bbb;
+}
+
+.box2-right .url {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-left: 22px;
+    color: #666;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+.box2-right {
+    padding-left: 8px;
+}
+
+
+.box2-right .url:hover {
+    text-decoration: underline;
+}
+
+.box2-right h2 {
+    font-size: 22px;
+    color: #222;
+    margin-top: -8px;
+    margin-bottom: 9px;
 }
 
 .box3 {
@@ -139,6 +217,8 @@ body>img {
     opacity: 0.4;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
 .box8 {
@@ -175,19 +255,20 @@ body>img {
 
 
 
-/* Hide the real radio visually, but keep it accessible to screen readers */
-
-
-
-
+.interview-buttons {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-bottom: -20px;
+}
 
 .interview-buttons .btn-watch,
 .interview-buttons .btn-vote {
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 8px 12px;
-    margin-right: 10px;
+    padding: 6px 22px;
+    margin-left: 6px;
     font-size: 14px;
     cursor: pointer;
     border-radius: 2px;
@@ -200,6 +281,20 @@ body>img {
     /* darker blue on hover */
 }
 
+.custom-radio-option {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+.custom-radio-option input[type="radio"] {
+    transform: scale(1.6);
+    /* Adjust as needed, e.g., 1.5, 2, etc. */
+    margin-right: 0.5em;
+    /* Space between radio and label */
+    cursor: pointer;
+}
 
 /* Top Navigation (box3) */
 .box3 nav ul {
